@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="GET">
+        <input type="text" placeholder="service" id="serviceGetInput">
+        <input type="text" placeholder="version" id="versionGetInput">
+        <button id="serviceGetButton">GET</button>
+    </form>
+    <div id="jsonGET"></div>
+    
+    <form action="#">
+        <input type="text" placeholder="service" id="servicePostInput">
+        <input type="text" placeholder="{ 'key1': 'value1', 'key2': 'value2' }" id="dataPostInput">
+        <button id="servicePostButton">POST</button>
+    </form>
+    <div id="jsonPOST"></div>
+
+    <form action="#">
+        <input type="text" placeholder="service" id="servicePutInput">
+        <input type="text" placeholder="{ 'key1': 'value1', 'key2': 'value2' }" id="dataPutInput">
+        <button id="servicePutButton">PUT</button>
+    </form>
+    <div id="jsonPUT"></div>
+
+    <form action="#">
+        <input type="text" placeholder="service" id="serviceDeleteInput">
+        <input type="text" placeholder="version" id="versionDeleteInput">
+        <button id="serviceDeleteButton">DELETE</button>
+    </form>
+    <div id="jsonDELETE"></div>
+    <h2>You can style this with the config options (pass propper css inline styles) <br> After you get new config just click on the box</h2>
+    <div style="width: 10rem; height: 10rem; background-color: black; margin-top: 2rem;" id="box"></div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./index.js"></script>
+</html>
